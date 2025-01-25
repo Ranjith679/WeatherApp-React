@@ -47,7 +47,8 @@ const Weather = () => {
         windSpeed: data.wind.speed,
         temprature: Math.floor(data.main.temp),
         city: data.name,
-        icon: icon
+        icon: icon,
+        description:data.weather[0].description,
       })
     } catch (e) {
       setWeatherReport(false)
@@ -68,6 +69,7 @@ const Weather = () => {
       </div>
       <img src={weatherReport.icon} alt="icon" className='weather-icon' />
       <p className='temprature'> {weatherReport.temprature}ºC</p>
+      <p className='desc'> {weatherReport.description}</p>
       <p className='city'>{weatherReport.city}</p>
       <div className="weather-data">
         <div className="col">

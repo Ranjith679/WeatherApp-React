@@ -34,7 +34,7 @@
 }
 
 .temprature{
-    font-size: 80px;
+    font-size: 70px;
     color: #fff;
     line-height: 1;
 }
@@ -67,4 +67,8 @@
 .weather-data .col img{
     width: 26px;
     margin-top: 10px;
+}
+
+.desc{
+    color: #ffff;
 }
